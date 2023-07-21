@@ -1,2 +1,10 @@
-# kopspod
-kopspod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-example
+spec:
+  containers:
+  - name: pod1
+    image: nginx
+    ports:
+      - containerPort: 80
